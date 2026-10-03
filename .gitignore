@@ -10,3 +10,6 @@ data/*.sqlite
 data/*.db
 .DS_Store
 .ipynb_checkpoints/
+docs/
+sandbox/.cache/
+data/traces/run-*.json

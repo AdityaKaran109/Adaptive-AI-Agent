@@ -1,0 +1,29 @@
+{
+  "episode_id": "ep-005",
+  "topic": "running-tests",
+  "task": "Run the sandbox test suite and report the result.",
+  "outcome": "fail",
+  "skill_used": "run-the-tests",
+  "skill_version": 1,
+  "turns": [],
+  "tool_calls": [
+    {
+      "tool": "run_tests",
+      "args": {
+        "cwd": "."
+      },
+      "ok": false,
+      "output": "collected 0 items"
+    }
+  ],
+  "steps": [
+    "run pytest from the repository root"
+  ],
+  "preferences": [],
+  "failures": [
+    {
+      "error": "pytest collected 0 items when run from the repository root",
+      "fix": "Ran pytest from the sandbox directory instead."
+    }
+  ]
+}

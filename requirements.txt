@@ -2,3 +2,8 @@ langgraph
 langchain-ollama
 pydantic
 python-dotenv
+oracledb
+oracleagentmemory
+langchain-oracledb
+rich
+pytest

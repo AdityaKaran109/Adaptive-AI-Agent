@@ -1,0 +1,31 @@
+{
+  "episode_id": "ep-002",
+  "topic": "running-tests",
+  "task": "Run the sandbox test suite and report the result.",
+  "outcome": "pass",
+  "skill_used": "run-the-tests",
+  "skill_version": 1,
+  "turns": [],
+  "tool_calls": [
+    {
+      "tool": "run_script",
+      "args": {
+        "name": "make_fixtures.py"
+      },
+      "ok": true,
+      "output": "wrote .cache/cases.json"
+    },
+    {
+      "tool": "run_tests",
+      "args": {},
+      "ok": true,
+      "output": "6 passed in 0.01s"
+    }
+  ],
+  "steps": [
+    "run make_fixtures.py",
+    "run pytest"
+  ],
+  "preferences": [],
+  "failures": []
+}

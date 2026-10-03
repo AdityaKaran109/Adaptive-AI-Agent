@@ -1,0 +1,27 @@
+{
+  "episode_id": "ep-007",
+  "topic": "running-tests",
+  "task": "Run the sandbox test suite and report the result.",
+  "outcome": "fail",
+  "skill_used": "run-the-tests",
+  "skill_version": 1,
+  "turns": [],
+  "tool_calls": [
+    {
+      "tool": "run_tests",
+      "args": {},
+      "ok": false,
+      "output": "ERROR collecting tests/test_shipping.py - FileNotFoundError: sandbox/.cache/cases.json"
+    }
+  ],
+  "steps": [
+    "run pytest"
+  ],
+  "preferences": [],
+  "failures": [
+    {
+      "error": "ERROR collecting tests/test_shipping.py - FileNotFoundError: sandbox/.cache/cases.json",
+      "fix": "Ran make_fixtures.py with run_script to create .cache/cases.json, then pytest passed."
+    }
+  ]
+}
